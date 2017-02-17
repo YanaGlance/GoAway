@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formularz podróży</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <p>Cześć</p>
+            <form  enctype="text/plain">
+                <div>
+                    Wybierz kraj</br>
+                    <select name="countryTo">
+                        <option selected="selected" value="ITA">Italy</option>
+                        <option value="ESP">Spain</option>
+                        <option value="EGY">Egypt</option>
+
+                    </select> </br>
+                    Podaj ilosc dni</br>
+                    <input name="amountOfDays" /></br>
+                </div>
+                <input type="submit" formaction="tourServlet" value="Wyslij formularz" />
+               </form>              
+                
+          
+        </div>
+    </body>
+</html>

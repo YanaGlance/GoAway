@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dodaj dodatkową informację</title>
+</head>
+<body>
+<form action="ReservationServlet" method="get">
+
+Typ jedzenia:<br/>
+<input name="meal" value=""/><br />
+Dodatkowo:<br/>
+<input name="recomendation" value=""/><br />
+
+<input type="submit" value="Dodaj"/>
+
+</form>
+
+</body>
+</html>
