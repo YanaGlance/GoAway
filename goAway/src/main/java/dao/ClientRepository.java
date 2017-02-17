@@ -19,7 +19,6 @@ public class ClientRepository extends RepositoryBase<Client> implements IClientR
     private PreparedStatement getName;
     private PreparedStatement getSurname;
     private PreparedStatement getPassportNumber;
-    //private PreparedStatement getTour;
 
 	public ClientRepository(Connection connection,
 			IMapResultSetIntoEntity<Client> mapper, IUnitOfWork uow) {
@@ -29,7 +28,7 @@ public class ClientRepository extends RepositoryBase<Client> implements IClientR
 		    getName = connection.prepareStatement(getNameSql());
 		    getSurname = connection.prepareStatement(getSurnameSql());
 		    getPassportNumber = connection.prepareStatement(getPassportNumberSql());
-		   // getTour = connection.prepareStatement(getTourSql());
+
         }catch(SQLException e){
 		    e.printStackTrace();
         }
